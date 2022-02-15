@@ -2,17 +2,17 @@
 
 ### 坐标系定义
 
-![image-20220111195549476](E:/CarDatasetProject/数据集清洗方案/log/log.assets/image-20220111195549476.png)
+![](README.assets/image-20220111195549476.png)
 
 LeopardCamera1坐标系，右手系，z轴向前
 
 VelodyneLidar坐标系，右手系，x指向正前方
 
-![image-20220112230829234](E:/CarDatasetProject/数据集清洗方案/log/log.assets/image-20220112230829234.png)
+![](README.assets/image-20220112230829234.png)
 
 （官方坐标系，右手系，y指向正前方）
 
-![image-20220112230617315](E:/CarDatasetProject/数据集清洗方案/log/log.assets/image-20220112230617315.png)
+![](README.assets/image-20220112230617315.png)
 
 OCULiiRadar坐标系，右手系，z轴向前
 
@@ -39,15 +39,15 @@ x=[sym('thetax');sym('thetay');sym('thetaz');sym('tx');sym('ty');sym('tz')]; %�
 xk=[-pi/2;0;0;0;0;0];
 ```
 
-![image-20220110204440511](E:/CarDatasetProject/数据集清洗方案/log/log.assets/image-20220110204440511.png)
+![](E:/CarDatasetProject/数据集清洗方案/log/log.assets/image-20220110204440511.png)
 
 剔除6/8/17
 
-![image-20220110204646655](E:/CarDatasetProject/数据集清洗方案/log/log.assets/image-20220110204646655.png)
+![](README.assets/image-20220110204646655.png)
 
 再剔除3/5/16/20
 
-![image-20220110204822472](E:/CarDatasetProject/数据集清洗方案/log/log.assets/image-20220110204822472.png)
+![image-20220110204822472](README.assets/image-20220110204822472.png)
 
 ```matlab
 TIRadar_to_LeopardCamera1_TransformMatrix = 
@@ -73,11 +73,11 @@ x=[sym('thetax');sym('thetay');sym('thetaz');sym('tx');sym('ty');sym('tz')]; %�
 xk=[0;0;0;0;0;0];
 ```
 
-![image-20220110210901364](E:/CarDatasetProject/数据集清洗方案/log/log.assets/image-20220110210901364.png)
+![](README.assets/image-20220110210901364.png)
 
 剔除6/7/16/17/22/24
 
-![image-20220110211232304](E:/CarDatasetProject/数据集清洗方案/log/log.assets/image-20220110211232304.png)
+![](README.assets/image-20220110211232304.png)
 
 ```matlab
 OCULiiRadar_to_LeopardCamera1_TransformMatrix = 
@@ -161,16 +161,16 @@ VelodyneLidar_to_LeopardCamera1_TransformMatrix = intrinsicsMatrix * transformMa
 0.998966844122018	0.0410508475655525	-0.0194954420069267	-0.515288952567310
 ```
 
-![image-20220112232742986](E:/CarDatasetProject/数据集清洗方案/log/log.assets/image-20220112232742986.png)
+![](README.assets/image-20220112232742986.png)
 
 ## 样例测试
 
-![image-20220112234036493](E:/CarDatasetProject/数据集清洗方案/log/log.assets/image-20220112234036493.png)
+![image-20220112234036493](README.assets/image-20220112234036493.png)
 
 投影点云
 
-![image-20220112234253645](E:/CarDatasetProject/数据集清洗方案/log/log.assets/image-20220112234253645.png)
+![image-20220112234253645](README.assets/image-20220112234253645.png)
 
 为VelodyneLidar自标注3d bbox后
 
-![image-20220113005018549](E:/CarDatasetProject/数据集清洗方案/log/log.assets/image-20220113005018549.png)
+![image-20220113005018549](README.assets/image-20220113005018549.png)
